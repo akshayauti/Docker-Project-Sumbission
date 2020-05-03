@@ -1,0 +1,45 @@
+version: '3'
+services:
+  dbos:
+    image: mysql:5.7
+    restart: always
+    volumes:
+      - mysql_storage1:/var/lib/mysql
+    environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_USER: deepanshu
+            MYSQL_PASSWORD: redhat
+            MYSQL_DATABASE: my_db
+    networks:
+      - net1
+        
+  joomlaos:
+    image: joomla:3-php7.2-apache
+    restart: always
+    ports:
+      - 8082:80
+    volumes:
+      - myjoomla_storage:/var/www/html
+    environment:
+            JOOMLA_DB_HOST: dbos
+            JOOMLA_DB_USER: deepanshu
+            JOOMLA_DB_PASSWORD: redhat 
+            JOOMLA_DB_NAME: my_db
+    networks:
+       - net1     
+volumes:
+   mysql_storage1:
+   myjoomla_storage:
+
+
+networks:       
+  net1:
+    driver: bridge
+    
+
+
+
+
+
+
+
