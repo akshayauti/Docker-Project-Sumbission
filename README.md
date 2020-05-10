@@ -56,5 +56,5 @@ Here Docker-compose file is most important for the project in this file we store
 ## 5. Docker-compose start/stop:
    * After using above command `docker-compose up` we can use  `docker-compose stop` to stop services. again to start the service use `docker compose start`. 
 
-## 9. Docker-compose down:
+## 6. Docker-compose down:
   * Use `docker compose down` command to stop the Container.
