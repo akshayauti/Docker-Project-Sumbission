@@ -2,7 +2,7 @@
 This Final Docker project submission Under **IIEC-RISE 1.0** Campaign. I learnt about Docker under the guidance of Vimal Daga Sir.
 
 ## I am explaining the set-up process in this documentation for my project.
-## 1. My system setup:
+## My system setup:
 * I am using **RedHat Enterprise Linux** on top of Windows using Oracle Virtual Box. also I have also installed Docker Software in it. .
 
 ## 1. Some basic commands use in docker are :
